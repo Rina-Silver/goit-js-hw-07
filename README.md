@@ -1,6 +1,9 @@
 # goit-js-hw-07
+
 GoIT JavaScript home work 7
 
-Link to the task
+[Ссылка на исходные файлы](https://github.com/Rina-Silver/goit-js-hw-07)
 
-Link to the GitHub Pages
+[Ссылка на рабочую страницу](https://rina-silver.github.io/goit-js-hw-07/)
+
+[Ссылка на задание](https://github.com/goitacademy/javascript-homework/tree/main/homework-07)
