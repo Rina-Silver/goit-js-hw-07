@@ -5,6 +5,6 @@ console.log(`В списке ${itemListEl.length} категории.`);
 
 itemListEl.forEach(item =>
   console.log(`
-    - Категория: ${item.querySelector('h2').textContent}
-    - Количество элементов: ${item.querySelectorAll('li').length} `)
+    - Категория: ${item.firstElementChild.textContent}
+    - Количество элементов: ${item.querySelector('ul').children.length} `)
 );
