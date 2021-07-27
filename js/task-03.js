@@ -16,7 +16,7 @@ const images = [
   },
 ];
 
-const galleryRef = document.querySelector('#gallery');
+const galleryRef = document.getElementById('gallery');
 //galleryRef.style.display = 'flex';
 //galleryRef.style.listStyleType = 'none';
 galleryRef.classList.add('gallery');
