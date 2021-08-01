@@ -1,8 +1,8 @@
-const inputRef = document.getElementById('#font-size-control');
-const textRef = document.getElementById('#text');
+const inputRef = document.getElementById('font-size-control');
+const textRef = document.getElementById('text');
 
-function changeFontSizeChange() {
-  textRef.setAttribute('style', `font-size: ${inputRef.value}px`);
+function changeFontSize(event) {
+  textRef.style.fontSize = `${event.currentTarget.value}px`;
 }
 
-inputRef.addEventListener('input', changeFontSizeChange);
+inputRef.addEventListener('input', changeFontSize);
