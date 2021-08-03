@@ -5,16 +5,19 @@ const boxRef = document.querySelector('#boxes');
 
 function createBoxes(amount) {
   const newBoxes = [];
+
   for (let i = 0; i < amount; i += 1) {
-    const newBox = document.createElement('div');
-    newBox.style.width = `${30 + i * 10}px`;
-    newBox.style.height = `${30 + i * 10}px`;
-    newBox.style.backgroundColor =
-      '#' + (((1 << 24) * Math.random()) | 0).toString(16);
+    const width = 30 + i * 10;
+    const height = 30 + i * 10;
+    const color = ((1 << 24) * Math.random()) | 0;
+    const newBox = `<div style="width:${width}px; height:${height}px; background-color: #${color.toString(
+      16
+    )}"></div>`;
+
     newBoxes.push(newBox);
   }
 
-  boxRef.append(...newBoxes);
+  boxRef.innerHTML = newBoxes.join('');
 }
 
 function handleClickDestroy() {
