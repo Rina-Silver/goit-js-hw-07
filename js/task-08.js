@@ -16,8 +16,8 @@ function createBoxes(amount) {
 
     newBoxes.push(newBox);
   }
-
-  boxRef.innerHTML = newBoxes.join('');
+  const elements = newBoxes.join('');
+  boxRef.insertAdjacentHTML('beforeend', elements);
 }
 
 function handleClickDestroy() {
